@@ -10,3 +10,26 @@
 
     margin-top: -5rem;
 }
+
+.SummaryCard {
+    background: var(--gray-600);
+    border-radius: 6px;
+    padding: 2rem;
+}
+
+.SummaryCard>header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray-300);
+}
+
+.SummaryCard>strong {
+    display: block;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.SummaryCard:last-child {
+    background: var(--green-700);
+}
