@@ -65,3 +65,54 @@
     cursor: pointer;
     color: var(--gray-500);
 }
+
+.TransactionType {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.TransactionType>button {
+    background: var(--gray-700);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 6px;
+    color: var(--gray-300);
+    cursor: pointer;
+    border: 0;
+
+}
+
+.TransactionType>button[data-state='unchecked']:hover {
+    background: var(--gray-600);
+}
+
+.firstButton>svg {
+    color: var(--green-300);
+}
+
+.firstButton[data-state='checked'] {
+    color: var(--white);
+    background: var(--green-500);
+}
+
+.firstButton>svg[data-state='checked'] {
+    color: var(--red-500);
+}
+
+.secondButton>svg {
+    color: var(--red-500);
+}
+
+.secondButton[data-state='checked'] {
+    color: var(--white);
+    background: var(--red-500);
+}
+
+.secondButton>svg[data-state='checked'] {
+    color: var(--white);
+}
