@@ -91,21 +91,14 @@
     background: var(--gray-600);
 }
 
-.firstButton>svg {
-    color: var(--green-300);
-}
-
 .firstButton[data-state='checked'] {
     color: var(--white);
     background: var(--green-500);
 }
 
-.firstButton>svg[data-state='checked'] {
-    color: var(--red-500);
-}
-
-.secondButton>svg {
-    color: var(--red-500);
+.firstButton[data-state='unchecked'] {
+    color: var(--green-300);
+    background: var(--gray-700);
 }
 
 .secondButton[data-state='checked'] {
@@ -113,6 +106,7 @@
     background: var(--red-500);
 }
 
-.secondButton>svg[data-state='checked'] {
-    color: var(--white);
+.secondButton[data-state='unchecked'] {
+    color: var(--red-300);
+    background: var(--gray-700);
 }
