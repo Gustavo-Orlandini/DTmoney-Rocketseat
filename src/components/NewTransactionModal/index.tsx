@@ -24,8 +24,19 @@ export function NewTransactionModal() {
 
                     <RadioGroup.Root className={styles.TransactionType}>
 
-                        <RadioGroup.Item value='income' className={styles.firstButton}><ArrowCircleUp size={24} /> Entrada</RadioGroup.Item>
-                        <RadioGroup.Item value='outcome' className={styles.secondButton} ><ArrowCircleDown size={24} />  Saída</RadioGroup.Item>
+                        <RadioGroup.Item
+                            value='income'
+                            className={styles.firstButton}>
+                            <ArrowCircleUp size={24} />
+                            Entrada
+                        </RadioGroup.Item>
+
+                        <RadioGroup.Item
+                            value='outcome'
+                            className={styles.secondButton} >
+                            <ArrowCircleDown size={24} />
+                            Saída
+                        </RadioGroup.Item>
 
                     </RadioGroup.Root>
 
