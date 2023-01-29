@@ -28,9 +28,15 @@
     color: var(--green-300);
     font-weight: bold;
     border-radius: 6px;
+    cursor: pointer;
 }
 
-.SearchFormContainer>button:hover {
+.SearchFormContainer>button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.SearchFormContainer>button:not(:disabled):hover {
     background: var(--green-500);
     border-color: 1px solid var(--green-500);
     color: var(--white);

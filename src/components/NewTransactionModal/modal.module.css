@@ -50,7 +50,12 @@
     cursor: pointer;
 }
 
-.DialogForm>button[type='submit']:hover {
+.DialogForm>button[type='submit']:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.DialogForm>button[type='submit']:not(:disabled):hover {
     background: var(--green-700);
     transition: 0.2s;
 }
