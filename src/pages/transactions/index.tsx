@@ -3,6 +3,7 @@ import { Header } from '../../components/Header/Header'
 import { Summary } from '../../components/Header/Summary'
 import { SearchForm } from '../../components/SearchForm'
 import { TransactionsContext } from '../../Contexts/TransactionsContext'
+import { dateFormatter, priceFormatter } from '../../Utils/formatter'
 import styles from './transactions.module.css'
 
 
@@ -25,9 +26,12 @@ export function Transactions() {
                             return (
                                 <tr key={transaction.id}>
                                     <td width={'50%'} >{transaction.description}</td>
-                                    <td style={transaction.type === 'income' ? { color: 'var(--green-500)' } : { color: 'var(--red-500)' }} >{transaction.price}</td>
+                                    <td style={transaction.type === 'income' ? { color: 'var(--green-500)' } : { color: 'var(--red-500)' }} >
+                                        {transaction.type === 'outcome' && '- '}
+                                        {priceFormatter.format(transaction.price)}
+                                    </td>
                                     <td>{transaction.category}</td>
-                                    <td>{transaction.createdAt}</td>
+                                    <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
                                 </tr>
                             )
                         })}
