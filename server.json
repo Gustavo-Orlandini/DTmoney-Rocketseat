@@ -23,6 +23,46 @@
       "category": "Outros",
       "price": 303,
       "createdAt": "2022-02-26T02:18:20.428Z"
+    },
+    {
+      "description": "Compra de computador",
+      "price": 2400,
+      "category": "Investimento",
+      "type": "outcome",
+      "createdAt": "2023-01-30T14:14:13.905Z",
+      "id": 4
+    },
+    {
+      "description": "Venda de computador",
+      "price": 1200,
+      "category": "Outros",
+      "type": "income",
+      "createdAt": "2023-01-30T14:14:35.371Z",
+      "id": 5
+    },
+    {
+      "description": "Pastel",
+      "price": 5,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-01-30T16:50:30.659Z",
+      "id": 6
+    },
+    {
+      "description": "Barbeiro",
+      "price": 45,
+      "category": "Outros",
+      "type": "outcome",
+      "createdAt": "2023-01-30T16:51:58.169Z",
+      "id": 7
+    },
+    {
+      "description": "Gasolina",
+      "price": 120,
+      "category": "Outros",
+      "type": "outcome",
+      "createdAt": "2023-01-30T16:52:30.773Z",
+      "id": 8
     }
   ]
 }
